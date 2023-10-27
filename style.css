@@ -1,0 +1,119 @@
+body {
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #141a32;
+}
+
+#quizContainer {
+    justify-content: center;
+    display: flex;
+    margin-top:50px;
+}
+
+input {
+    float: right;
+    margin-right: 10px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+input::after{
+    background-color: black;
+}
+span {
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+h3 {
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.option-div {
+    border: 5px solid rgba(245, 245, 245, 0.437);
+    border-radius: 15px; 
+    margin-bottom: 20px;
+    padding: 10px; 
+    transition: 1s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.option-div:hover{
+    background-color: rgba(245, 245, 245, 0.607);
+   
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    cursor: pointer;
+}
+#next-btn{
+    width: 130px;
+    height: 45px;
+    margin-left: 75%;
+    color: white;
+    font-size: 25px;
+    background-color: #1ba9c2c2;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+}
+/* style.css */
+
+#timer {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    margin-top: 5px;
+    margin-left: 40%;
+}
+#winImage{
+    width: 250px;
+    top: 30px;
+    position: fixed;
+    margin-left: 40%;
+}
+h1{
+    color: white;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 90px;
+}
+h3{
+    text-align: center;
+    font-size: 40px;
+}
+#loseImage{
+    width: 250px;
+    top: 30px;
+    position: fixed;
+    margin-left: 40%;
+}
+p{
+    position: fixed;
+    top: 0%;
+    color: white;
+    font-size: 35px;
+    margin-left: 15px;
+    margin-top: 7%;
+}
